@@ -1,28 +1,31 @@
 body{
-    background-color:darkkhaki;
-    font-family:sans-serif;
+    background-color:rgb(127, 212, 234);
+    color: white
 }
 
 p{
     font-size:20px;
-    color:darkolivegreen;
-    background-color:#8cfa17;
+    color:white;
+    background-color:rgb(65, 124, 243, .5);
     padding:10px;
     margin:30px;
 }
 
 .special{
-    border:10px inset #dad259;
+    border:10px inset rgb(108, 221, 60, .5);
     padding:30px;
-    background-color:#d1cd9c;
+    background-color:#61d1d1;
     text-align:center;
+    font-family: sans-serif
 }
 
 h1{
+    font-family: sans-serif;
     font-size:50px;
-    font-weight:normal;
-    font-style:italic;
+    font-weight: 500;
 }
+
+
 
 .highlight{
     border: 5px dashed yellow;
@@ -30,4 +33,8 @@ h1{
 
 img{
 max-width:100%;
+}
+
+.menu{
+    font-style: italic;
 }
