@@ -1,0 +1,20 @@
+ol {
+    background-color: #8ace00;
+    font-family: sans-serif;
+    width: 700px;
+    line-height: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-family: helvetica;
+    font-size: 125px;
+    font-weight: normal;
+    text-align: justify;
+    width: 723px;
+}
+
+a {
+    color: black;
+}
