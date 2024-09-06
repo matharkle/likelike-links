@@ -1,7 +1,38 @@
-h1{
-    font-family: sans-serif;
+*{
+    box-sizing: border-box;
 }
 
-h3{
-    background-color: aqua;
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-family: monospace;
+}
+
+body{
+    color: white;
+    background-image: url("images/screen-background.png");
+    background-size: 100%;
+    margin: 15% 12%;
+    font-family: monospace;
+}
+
+a{
+    color: white;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: -99;
 }
