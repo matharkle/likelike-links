@@ -1,79 +1,23 @@
 *{
     box-sizing: border-box;
-    /* max-width: 1095px; */
-    max-width: 640px;
-    max-height: 1080px;
 }
 
 img{
     max-width: 100%;
+    background-color: lightgray;
+    padding: 10px;
+    border: 1px solid black;
 }
 
 h1{
-    font-family: monospace;
+    background-color: lightgray;
 }
 
 body{
-    color: white;
-    margin: 15% 12%;
-    font-family: monospace;
+
 }
 
-table{
-    padding: 10px 0;
-    min-width: 490px;
-}
-
-a{
-    color: white;
-}
-
-.fixed{
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    min-width: 640px;
-}
-
-.background{
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    z-index: -99;
-    min-width: 640px;
-}
-
-.pics{
-    max-width: 400px;
-}
-
-/* .menu{
-    font-size: large;
-    font-weight: bold;
-} */
-
-.special{
-    font-style: italic;
-}
-
-.ready-player-one{
-    text-align: center;
-    padding: 0 25px;
-}
-
-.navigation{
-    font-size: 12px;
-    font-style: italic;
-    margin: 0 25px;
-    background-color: rgb(0, 0, 0);
-}
-
-.blue{
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    z-index: -99;
+.indent{
+    columns: 2;
+    margin-left: 42px;
 }
