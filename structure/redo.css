@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+}
+
+body{ 
+    background-image: url(images/linoleum.png);
+    margin: 50px;
+    /* cursor: url(), auto'; */
+}
+
+.box{
+    position: absolute;
+    height: 1030px;
+    width: 1555px;
+    z-index: 1000;
+    left: 50px;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    /* position: relative; */
+}
+
+.container{
+    background-image: url(images/storage-tote.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* padding: 150px 300px 300px 200px; */
+    height: 1025px;
+    width: 1650px;
+}
+
+#keyboard{
+    position: absolute;
+    cursor: move;
+    left: 300px;
+    top: 170px;
+    width: 650px;
+}
+
+#leapstart{
+    position: absolute;
+    cursor: move;
+    top: 365px;
+    left: 250px;
+    width: 700px;
+    rotate: -35deg;
+}
+
+/* #leapstart{
+    position: absolute;
+    cursor: move;
+    bottom: 290px;
+    left: 280px;
+    width: 600px;
+    rotate: -20deg;
+} */
+
+#mouse{
+    position: absolute;
+    cursor: move;
+    top: 200px;
+    left: 875px;
+    width: 225px;
+    rotate: 125deg;
+}
+
+#l-speaker{
+    position: absolute;
+    cursor: move;
+    top: 180px;
+    left: 1110px;
+    width: 200px;
+    rotate: 60deg;
+}
+
+/* #l-speaker{
+    position: absolute;
+    cursor: move;
+    top: 175px;
+    left: 1025px;
+    width: 200px;
+    rotate: 45deg;
+} */
+
+#r-speaker{
+    position: absolute;
+    cursor: move;
+    bottom: 250px;
+    left: 1190px;
+    width: 200px;
+    rotate: 25deg;
+}
+
+/* #r-speaker{
+    position: absolute;
+    cursor: move;
+    top: 340px;
+    left: 1185px;
+    width: 200px;
+    rotate: 20deg;
+} */
+
+#i-spy{
+    position: absolute;
+    cursor: move;
+    bottom: 350px;
+    left: 800px;
+    width: 250px;
+    rotate: 15deg;
+}
+
+#pjsam{
+    position: absolute;
+    cursor: move;
+    bottom: 275px;
+    left: 955px;
+    width: 250px;
+    rotate: -30deg;
+}
+
+/* #discman{
+    position: absolute;
+    cursor: move;
+    bottom: 225px;
+    left: 625px;
+    width: 300px;
+    rotate: 100deg;
+} */
+
+#cars{
+    position: absolute;
+    cursor: move;
+    bottom: 265px;
+    left: 600px;
+    width: 275px;
+    rotate: 10deg;
+}
+
+#splitter{
+    position: absolute;
+    cursor: move;
+    top: 460px;
+    left: 1115px;
+    width: 125px;
+    rotate: 30deg;
+}
+
+#headphones{
+    position: absolute;
+    cursor: move;
+    top: 200px;
+    left: 1015px;
+    width: 200px;
+}
+
+#webkinz-1{
+    position: absolute;
+    cursor: move;
+    top: 425px;
+    left: 300px;
+    width: 100px;
+    rotate: -15deg;
+}
+
+#webkinz-2{
+    position: absolute;
+    cursor: move;
+    top: 430px;
+    left: 930px;
+    width: 100px;
+    rotate: -150deg;
+}
+
+#webkinz-3{
+    position: absolute;
+    cursor: move;
+    top: 490px;
+    left: 1015px;
+    width: 100px;
+    rotate: 10deg;
+}
+
+#webkinz-4{
+    position: absolute;
+    cursor: move;
+    top: 225px;
+    left: 1115px;
+    width: 100px;
+    rotate: 10deg;
+}
+
+/* #cars{
+    position: absolute;
+    cursor: move;
+    bottom: 300px;
+    left: 300px;
+    width: 275px;
+    rotate: 20deg;
+} */
+
+#discman{
+    position: absolute;
+    cursor: move;
+    bottom: 225px;
+    left: 275px;
+    width: 300px;
+    rotate: -10deg;
+}
+
+#zune{
+    position: absolute;
+    cursor: move;
+    bottom: 250px;
+    left: 875px;
+    width: 125px;
+    rotate: -10deg;
+}
+
+#{
+    position: absolute;
+    cursor: move;
+    bottom: 250px;
+    left: 300px;
+    width: 600px;
+}
+
+#{
+    position: absolute;
+    cursor: move;
+    bottom: 250px;
+    left: 300px;
+    width: 600px;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY();
+        opacity: 100%
+    }
+
+    25% {
+        transform: translateY(1000px);
+        opacity: 70%;
+    }
+
+    100% {
+        transform: translateY(1250px);
+        opacity: 0%;
+    }
+}
+
+.toy{
+    animation: drop 3.5s forwards linear;
+}
+
+/* .box {
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    position: relative;
+} */

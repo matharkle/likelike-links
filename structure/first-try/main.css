@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background-image: url(images/linoleum.png);
+    margin: 25px;
+    max-width: 1920px;
+}
+
+#keyboard{
+    position: absolute;
+    cursor: move;
+}
+
+#leappad{
+    position: absolute;
+    cursor: move;
+    top: 50%;
+}
+
+#divhead{
+    width: 100%;
+    height: 100%;
+    cursor: move;
+}
+
+.large{
+    max-width: 650px;
+    max-height: 400px;
+}
+
+.container{
+    height: 1080px;
+    width: 1920px;
+    padding: 150px 275px;
+    background-image: url(images/storage-tote.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#bottom{
+    position: absolute;
+    top: 0;
+}
+
+.top{
+    position: static;
+}
