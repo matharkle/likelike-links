@@ -4,13 +4,24 @@ body{
     font-size: 1.2vw;
     color: rgb(255, 255, 255, .45);
     margin: 30vh 10%;
-    max-width: 100%;
-    min-width: 1080px;
+    /* max-width: 100%;
+    min-width: 1080px; */
     background-color: black;
-    background-image: url(map-background-fade.png);
+    /* background-image: url(map-background-fade.png);
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
+
+.background{
+    /* width: 1920px;
+    height: 1080px; */
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
 .map-text{
     color: rgb(255, 255, 255, .65);
     /* font-weight: normal; */
