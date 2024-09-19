@@ -1,0 +1,17 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    /* font-weight: bold; */
+    font-size: 1.2vw;
+    color: rgb(255, 255, 255, .45);
+    margin: 30vh 10%;
+    max-width: 100%;
+    min-width: 1080px;
+    background-color: black;
+    background-image: url(map-background-fade.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.map-text{
+    color: rgb(255, 255, 255, .65);
+    /* font-weight: normal; */
+}
