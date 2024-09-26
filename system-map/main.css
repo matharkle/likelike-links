@@ -1,0 +1,125 @@
+*{
+  box-sizing: border-box;
+  height: 700vh;
+}
+
+
+img{
+  max-width: 100%;
+}
+
+body{
+  margin: 0;
+  background: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2vh;
+  line-height: 50%;
+  color: rgb(255, 255, 255, .45);
+}
+
+p{
+  height: 1vh;
+}
+
+ul{
+  height: 30vh;
+}
+
+/* .parallax {
+  background-image: url("map-background-DOUBLE.png");
+  height: 450vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+/* .text{
+  padding: 30vh 0 30vh 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 450vh;
+} */
+
+.parallax {
+  /* height: 500px; */
+  height: 600vh;
+  /* overflow-x: hidden; */
+  overflow-y: auto;
+  /* -webkit-perspective: 300px; */
+  perspective: 300px;
+}
+
+.parallax__group {
+  /* position: relative; */
+  /* height: 500px; */
+  height: 600vh;
+  /* -webkit-transform-style: preserve-3d; */
+  transform-style: preserve-3d;
+  transition: transform 0.0001ms;
+  overflow-y: visible;
+}
+
+/* .parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} */
+
+/* .parallax__group {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.001s;
+} */
+
+.parallax__layer--fore {
+  background-image: url(concept-map.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  height: 700vh;
+  /* -webkit-transform: translateZ(90px) scale(.7); */
+  transform: translateZ(100px) translateY(-575vh) translateX(10%) scale(.7);
+  z-index: 1;
+  padding: 0;
+}
+
+/* .parallax__layer--fore {
+  position: relative;
+  height: 650vh;
+  top: 30vh;
+  left: 10%;
+  transition: transform 0.5s;
+  transform: translateZ(100px) scale(.5);
+  z-index: 1;
+  overflow-y: visible;
+} */
+
+/* .parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
+} */
+
+.parallax__layer--back {
+  background-image: url(map-background-DOUBLE.png);
+  height: 600vh;
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* -webkit-transform: translateZ(-300px) scale(2); */
+  /* transform: translateZ(0px) scale(1); */
+  z-index: 3;
+  overflow-y: visible;
+}
+
+/* .parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
+} */
