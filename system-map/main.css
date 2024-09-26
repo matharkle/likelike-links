@@ -83,7 +83,7 @@ ul{
   overflow-x: hidden;
   height: 700vh;
   /* -webkit-transform: translateZ(90px) scale(.7); */
-  transform: translateZ(100px) translateY(-575vh) translateX(10%) scale(.7);
+  transform: translateZ(100px) translateY(-615vh) translateX(5%) scale(.65);
   z-index: 1;
   padding: 0;
 }
