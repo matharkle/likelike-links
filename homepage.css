@@ -1,4 +1,4 @@
-ol {
+ol{
     background-color: #8ace00;
     font-family: sans-serif;
     width: 700px;
@@ -7,7 +7,7 @@ ol {
     padding-bottom: 20px;
 }
 
-h1 {
+h1{
     font-family: helvetica;
     font-size: 125px;
     font-weight: normal;
@@ -15,6 +15,21 @@ h1 {
     width: 723px;
 }
 
-a {
-    color: black;
+a{
+    color: inherit;
+}
+
+ul{
+    background-color: cornflowerblue;
+    width: 700px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: monospace;
+}
+
+.note{
+    font-style: italic;
+    font-size: smaller;
+    line-height: 0;
 }
