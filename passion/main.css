@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: monospace;
+    color: white;
+    mix-blend-mode: difference;
+    background-color: black;
+    background-image: url(screen-background.png);
+    padding: 50px;
+    font-size: 125%;
+}
+
+ul{
+    line-height: 200%;
+}
+
+a{
+    color: inherit;
+}
+
+p{
+    font-size: 80%;
+}
