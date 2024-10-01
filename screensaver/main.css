@@ -29,6 +29,19 @@ body{
     position: absolute;
     bottom: 20%;
     right: 10%;
+    animation: bob 10s ease-in-out infinite alternate;
+}
+
+@keyframes bob {
+    0%{
+        transform: translateX(1vw) translateY(0vh);
+    }
+    50%{
+        transform: translateX(0vw) translateY(-1vh);
+    }
+    100%{
+        transform: translateX(-1vw) translateY(-1vh);
+    }
 }
 
 .relax{
