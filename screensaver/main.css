@@ -10,6 +10,13 @@ body{
     margin: 0;
 }
 
+.player{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
 .background{
     background-color: aqua;
     height: 100vh;
