@@ -5,3 +5,157 @@
 img{
     max-width: 100%;
 }
+
+body{
+    margin: 0;
+}
+
+.background{
+    background-color: aqua;
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url(caustics-transparent.png); */
+    position: relative;
+    overflow: hidden;
+}
+
+.text{
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+}
+
+.relax{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sand{
+    width: 200vw;
+    height: 200vh;
+    background-image: url(images/sand3.png);
+    background-size: 60%;
+    opacity: 100%;
+    animation: sway 10s ease-in-out infinite alternate;
+}
+
+@keyframes sway {
+    0%{
+        transform: translateX(-10vw) translateY(-8vh);
+    }
+    50%{
+        transform: translateX(-8vw) translateY(-10vh);
+    }
+    100%{
+        transform: translateX(-10vw) translateY(-10vh);
+    }
+}
+
+.overlay{
+    background-color: aqua;
+    opacity: 0;
+    width: 300vw;
+    height: 300vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: sunset 30s 10s ease-in-out infinite alternate;
+}
+
+/* .caustics{
+    width: 100vw;
+    animation: right 4s linear infinite;
+} */
+
+.background-1{
+    height: 500vh;
+    width: 500vw;
+    background-image: url(images/caustics-transparent.png);
+    background-position: center;
+    background-size: 30%;
+    /* display: flex;
+    flex-direction: column;
+    position: relative; */
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: right 90s linear infinite;
+}
+
+@keyframes right {
+    0% {
+        transform: translateX(-100vw) translateY(-150vh);
+    }
+    100% {
+        transform: translateX(0vw) translateY(0vh);
+    }
+}
+
+.background-2{
+    height: 500vh;
+    width: 500vw;
+    background-image: url(images/caustics-transparent-flip.png);
+    background-position: center;
+    background-size: 30%;
+    overflow: hidden;
+    opacity: 62%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: left 90s linear infinite;
+}
+
+@keyframes left {
+    0% {
+        transform: translateX(-100vw) translateY(-100vh);
+    }
+    100% {
+        transform: translateX(-300vw) translateY(-200vh);
+    }
+}
+
+.sun{
+    background-color: aqua;
+    opacity: 0%;
+    width: 300vw;
+    height: 300vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: sunset 60s 10s ease-in-out infinite alternate;
+}
+
+@keyframes sunset {
+    0%{
+        background: aqua;
+        opacity: 0%;
+    }
+    15%{
+        background: gold;
+        opacity: 10%;
+    }
+    30%{
+        background: orange;
+        opacity: 20%;
+    }
+    70%{
+        background: darkviolet;
+        opacity: 15%;
+    }
+    75%{
+        background: darkslateblue;
+        opacity: 25%;
+    }
+    100%{
+        background: black;
+        opacity: 30%;
+    }
+}
