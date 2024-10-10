@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    background-image: url(forest.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 125%;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.road {
+    font-family: sans-serif;
+    display: none;
+    margin: 90vh auto 0 auto;
+}
+
+.unknown {
+    font-family: sans-serif;
+    margin: 90vh auto 0 auto;
+}
+
+.rock-fact {
+    font-family: sans-serif;
+    display: none;
+    margin: 90vh auto 0 auto;
+}
+
+.lantern {
+    font-family: sans-serif;
+    display: none;
+    margin: 90vh auto 0 auto;
+}
+
+.darkness {
+    font-family: sans-serif;
+    display: none;
+    margin: 90vh auto 0 auto;
+}
+
+@media screen and (min-width: 1800px) {
+    body {
+        background-color: black;
+        background-image: url(darkness.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 150%;
+    }
+    .road {
+        display: none;
+    }
+    .unknown {
+        display: none;
+    }
+    .rock-fact {
+        display: none;
+    }
+    .lantern {
+        display: none;
+    }
+    .darkness {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    body {
+        background-image: url(road.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+    .road {
+        display: block;
+    }
+    .unknown {
+        display: none;
+    }
+    .rock-fact {
+        display: none;
+    }
+    .lantern {
+        display: none;
+    }
+    .darkness {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-image: url(rock-fact.png);background-size: contain;
+        background-repeat: no-repeat;
+        color: lightgrey
+    }
+    .road {
+        display: none;
+    }
+    .unknown {
+        display: none;
+    }
+    .rock-fact {
+        display: block;
+    }
+    .lantern {
+        display: none;
+    }
+    .darkness {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url(The-Beast-cropped.png);background-size: contain;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+    .road {
+        display: none;
+    }
+    .unknown {
+        display: none;
+    }
+    .rock-fact {
+        display: none;
+    }
+    .lantern {
+        display: none;
+    }
+    .darkness {
+        display: none;
+    }
+}
