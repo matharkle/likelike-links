@@ -88,6 +88,7 @@ audio {
         background-size: cover;
         background-repeat: no-repeat;
         color: white;
+        font-size: 115%;
     }
     .road {
         display: block;
@@ -110,7 +111,8 @@ audio {
     body {
         background-image: url(rock-fact.png);background-size: contain;
         background-repeat: no-repeat;
-        color: lightgrey
+        color: lightgrey;
+        font-size: 100%;
     }
     .road {
         display: none;
