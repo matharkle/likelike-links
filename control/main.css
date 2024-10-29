@@ -40,7 +40,6 @@ a {
     height: 3.5vh;
     display: none;
 }
-
 .audio.open {
     display: block;
 }
@@ -136,7 +135,6 @@ a {
     top: 0;
     left: 0;
 }
-
 .safari.website {
     background-image: url(images/website.png);
 }
@@ -162,7 +160,6 @@ a {
     left: 30vw;
     display: none;
 }
-
 .preview.open {
     display: block;
     position: absolute;
@@ -181,7 +178,6 @@ a {
     right: 15vh;
     display: none;
 }
-
 .music.open {
     display: block;
     position: absolute;

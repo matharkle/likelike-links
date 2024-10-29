@@ -16,6 +16,7 @@ $( function() {
 
 function openFunction() {
     $(".preview").addClass("open");
+	previewBringToFront();
 }
 
 function playFunction() {
@@ -28,6 +29,7 @@ function playFunction() {
 
 function websiteFunction() {
 	$(".safari").addClass("website");
+	safariBringToFront();
 }
 
 
