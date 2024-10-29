@@ -21,7 +21,8 @@ function openFunction() {
 function playFunction() {
     $(".music").addClass("open");
     const audio = new Audio("APT.mp3");
-    audio.play();
+    // audio.play();
+	$(".audio").addClass("open");
     musicBringToFront();
 }
 

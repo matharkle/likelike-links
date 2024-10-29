@@ -33,6 +33,20 @@ a {
 
 
 
+.audio {
+    position: absolute;
+    top: 0;
+    right: 20vh;
+    height: 3.5vh;
+    display: none;
+}
+
+.audio.open {
+    display: block;
+}
+
+
+
 .date-time {
     position: absolute;
     top: .5vh;
