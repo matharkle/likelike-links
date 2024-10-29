@@ -25,6 +25,10 @@ function playFunction() {
     musicBringToFront();
 }
 
+function websiteFunction() {
+	$(".safari").addClass("website");
+}
+
 
 
 // BRING TO FRONT
