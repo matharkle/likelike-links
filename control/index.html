@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <title>control</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/smoothness/jquery-ui.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="date-time">
+            <p id="datetime"></p>
+        </div>
+
+<!-- DESKTOP ITEMS -->
+
+        <div id="folder" class="folder draggable" onclick="folderRaise()">
+            <img src="images/folder.png">
+            <p class="text">handmade-web</p>
+        </div>
+
+        <div id="jpg" class="jpg draggable" onclick="jpgRaise()">
+            <img src="images/jpg.png" ondblclick="openFunction()">
+            <p class="text">axolotl.jpg</p>
+        </div>
+
+        <div id="mp3" class="mp3 draggable" onclick="mp3Raise()">
+            <img id="mp3" src="images/mp3.png" ondblclick="playFunction()">
+            <p class="text">APT.mp3</p>
+        </div>
+
+<!-- APP WINDOWS -->
+
+        <div id="safari" class="safari draggable resizable" onclick="safariBringToFront()"></div>
+
+        <div id="finder" class="finder draggable resizable" onclick="finderBringToFront()"></div>
+        
+        <div id="preview" class="preview draggable resizable" onclick="previewBringToFront()"></div>
+
+        <div id="music" class="music draggable resizable" onclick="musicBringToFront()"></div>
+
+    </div>
+
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/main.js"></script>
+    
+</body>
+
+</html>

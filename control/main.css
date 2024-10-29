@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+.container {
+    height: 100vh;
+    /* width: 100%; */
+    background-image: url(images/macos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 5vh 2vh 10vh 2vh;
+    position: relative;
+}
+
+
+
+.date-time {
+    position: absolute;
+    top: .5vh;
+    right: .5vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 1.5vh;
+}
+
+
+
+/* DESKTOP ITEMS */
+
+.folder {
+    width: 10vh;
+    height: 12vh;
+    position: absolute;
+    top: 5vh;
+    right: 3vh;
+}
+
+.jpg {
+    height: 12vh;
+    width: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 20vh;
+    right: 5vh;
+}
+
+.mp3 {
+    height: 12vh;
+    width: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 34vh;
+    right: 5vh;
+}
+
+.text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 1.5vh;
+    margin: 0;
+}
+
+
+
+/* APP WINDOWS */
+
+.safari {
+    width: 60vw;
+    height: 40vw;
+    background-image: url(images/safari.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.finder {
+    width: 60vh;
+    height: 40vh;
+    background-image: url(images/finder.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+}
+
+.preview {
+    height: 40vw;
+    width: 55vw;
+    background-image: url(images/preview.png);
+    background-size: cover;
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    display: none;
+}
+
+.preview.open {
+    display: block;
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+}
+
+.music {
+    height: 40vh;
+    width: 33vh;
+    background-image: url(images/music.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30vh;
+    right: 15vh;
+    display: none;
+}
+
+.music.open {
+    display: block;
+    position: absolute;
+    top: 20vh;
+    right: 20vh;
+}
