@@ -1,0 +1,354 @@
+*{
+    box-sizing: border-box;
+}
+
+body { 
+    background-image: url(images/carpet.jpg.webp);
+    background-size: 500px;
+    width: 6500px;
+    height: fit-content;
+    padding: 100px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.lid {
+    position: absolute;
+    height: 1030px;
+    width: 1555px;
+    z-index: 1000;
+    left: 50px;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    /* position: relative; */
+}
+
+.tote {
+    background-image: url(images/storage-tote.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* padding: 150px 300px 300px 200px; */
+    height: 1025px;
+    width: 1650px;
+}
+
+.basket {
+    background-image: url(images/basket.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1000px;
+    width: 1500px;
+    position: absolute;
+    left: 1750px;
+}
+
+.box {
+    background-image: url(images/box.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1000px;
+    width: 1500px;
+    position: absolute;
+    left: 3000px;
+}
+
+.keyboard{
+    position: absolute;
+    cursor: move;
+    left: 300px;
+    top: 220px;
+    width: 650px;
+}
+
+#leapstart{
+    position: absolute;
+    cursor: move;
+    top: 415px;
+    left: 250px;
+    width: 700px;
+    rotate: -35deg;
+}
+
+#mouse{
+    position: absolute;
+    cursor: move;
+    top: 250px;
+    left: 875px;
+    width: 225px;
+    rotate: 125deg;
+}
+
+#l-speaker{
+    position: absolute;
+    cursor: move;
+    top: 220px;
+    left: 1110px;
+    width: 200px;
+    rotate: 60deg;
+}
+
+#r-speaker{
+    position: absolute;
+    cursor: move;
+    top: 500px;
+    left: 1160px;
+    width: 200px;
+    rotate: 25deg;
+}
+
+#i-spy{
+    position: absolute;
+    cursor: move;
+    top: 550px;
+    left: 800px;
+    width: 250px;
+    rotate: 15deg;
+}
+
+#pjsam{
+    position: absolute;
+    cursor: move;
+    top: 650px;
+    left: 955px;
+    width: 250px;
+    rotate: -30deg;
+}
+
+#cars{
+    position: absolute;
+    cursor: move;
+    top: 650px;
+    left: 600px;
+    width: 275px;
+    rotate: 10deg;
+}
+
+#splitter{
+    position: absolute;
+    cursor: move;
+    top: 510px;
+    left: 1115px;
+    width: 125px;
+    rotate: 30deg;
+}
+
+#headphones{
+    position: absolute;
+    cursor: move;
+    top: 250px;
+    left: 1015px;
+    width: 200px;
+}
+
+#webkinz-1{
+    position: absolute;
+    cursor: move;
+    top: 475px;
+    left: 300px;
+    width: 100px;
+    rotate: -15deg;
+}
+
+#webkinz-2{
+    position: absolute;
+    cursor: move;
+    top: 480px;
+    left: 930px;
+    width: 100px;
+    rotate: -150deg;
+}
+
+#webkinz-3{
+    position: absolute;
+    cursor: move;
+    top: 540px;
+    left: 1015px;
+    width: 100px;
+    rotate: 10deg;
+}
+
+#webkinz-4{
+    position: absolute;
+    cursor: move;
+    top: 275px;
+    left: 1115px;
+    width: 100px;
+    rotate: 10deg;
+}
+
+#discman{
+    position: absolute;
+    cursor: move;
+    top: 610px;
+    left: 275px;
+    width: 300px;
+    rotate: -10deg;
+}
+
+.zune-1 {
+    position: absolute;
+    cursor: move;
+    top: 675px;
+    left: 875px;
+    width: 125px;
+    rotate: -10deg;
+}
+
+.zune-2 {
+    position: absolute;
+    cursor: move;
+    top: 675px;
+    left: 875px;
+    width: 125px;
+    rotate: -10deg;
+    display: none;
+    pointer-events: none;
+}
+
+.zune-2.on {
+    display: block;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY();
+        opacity: 100%
+    }
+
+    25% {
+        transform: translateY(1000px);
+        opacity: 70%;
+    }
+
+    100% {
+        transform: translateY(1250px);
+        opacity: 0%;
+    }
+}
+
+.toy{
+    animation: drop 3.5s forwards linear;
+}
+
+/* .box {
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    position: relative;
+} */
+
+.component {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    width: 325px;
+}
+
+.wiimote {
+    position: absolute;
+    top: 300px;
+    left: 175px;
+    width: 425px;
+    transform: rotate(-20deg);
+}
+
+.microphone {
+    position: absolute;
+    top: 225px;
+    left: 450px;
+    width: 250px;
+    transform: rotate(-10deg);
+}
+
+.wheel {
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    width: 400px;
+    transform: rotate(30deg);
+}
+
+.city-folk {
+    position: absolute;
+    top: 225px;
+    left: 675px;
+    width: 300px;
+    transform: rotate(5deg);
+}
+
+.memory {
+    position: absolute;
+    top: 675px;
+    left: 225px;
+    width: 90px;
+    transform: rotate(10deg);
+}
+
+.stylus {
+    position: absolute;
+    top: 650px;
+    left: 550px;
+    width: 20px;
+    transform: rotate(80deg);
+}
+
+.peach {
+    position: absolute;
+    top: 675px;
+    left: 600px;
+    width: 20px;
+    transform: rotate(275deg);
+}
+
+.nintendogs {
+    position: absolute;
+    top: 625px;
+    left: 525px;
+    width: 70px;
+    transform: rotate(-15deg);
+}
+
+.charger {
+    position: absolute;
+    top: 590px;
+    left: 825px;
+    width: 150px;
+    transform: rotate(-45deg);
+}
+
+.disc {
+    position: absolute;
+    top: 500px;
+    left: 625px;
+    width: 250px;
+}
+
+.gcc {
+    position: absolute;
+    top: 170px;
+    left: 745px;
+    width: 315px;
+    transform: rotate(-165deg);
+}
+
+.alligator {
+    position: absolute;
+    top: 150px;
+    left: 775px;
+    width: 400px;
+    transform: rotate(45deg);
+}
+
+.pug {
+    position: absolute;
+    top: 460px;
+    left: 550px;
+    width: 250px;
+    transform: rotate(90deg);
+}
