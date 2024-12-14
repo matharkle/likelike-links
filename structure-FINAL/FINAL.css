@@ -5,7 +5,7 @@
 body { 
     background-image: url(images/carpet.jpg.webp);
     background-size: 500px;
-    width: 6500px;
+    width: 6000px;
     height: fit-content;
     padding: 100px;
     margin: 0;
@@ -45,7 +45,7 @@ body {
     height: 1000px;
     width: 1500px;
     position: absolute;
-    left: 3200px;
+    left: 3150px;
 }
 
 .box {
@@ -55,7 +55,7 @@ body {
     height: 1000px;
     width: 1500px;
     position: absolute;
-    left: 4600px;
+    left: 4400px;
 }
 
 .tub{
@@ -70,7 +70,7 @@ body {
 
 .keyboard{
     position: absolute;
-    cursor: move;
+    
     left: 300px;
     top: 220px;
     width: 650px;
@@ -78,7 +78,7 @@ body {
 
 #leapstart{
     position: absolute;
-    cursor: move;
+    
     top: 415px;
     left: 250px;
     width: 700px;
@@ -87,7 +87,7 @@ body {
 
 #mouse{
     position: absolute;
-    cursor: move;
+    
     top: 250px;
     left: 875px;
     width: 225px;
@@ -96,43 +96,56 @@ body {
 
 #l-speaker{
     position: absolute;
-    cursor: move;
+    
     top: 220px;
-    left: 1110px;
-    width: 200px;
+    left: 1100px;
+    width: 260px;
     rotate: 60deg;
 }
 
 #r-speaker{
     position: absolute;
-    cursor: move;
+    
     top: 500px;
     left: 1160px;
-    width: 200px;
+    width: 275px;
     rotate: 25deg;
 }
 
-#i-spy{
+.ispy{
     position: absolute;
-    cursor: move;
+    
     top: 550px;
     left: 800px;
     width: 250px;
     rotate: 15deg;
 }
 
-#pjsam{
+.pjsam{
     position: absolute;
-    cursor: move;
+    
     top: 650px;
     left: 955px;
     width: 250px;
     rotate: -30deg;
 }
 
+.spin {
+    animation: spin 1s linear;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 #cars{
     position: absolute;
-    cursor: move;
+    
     top: 650px;
     left: 600px;
     width: 275px;
@@ -141,7 +154,7 @@ body {
 
 #splitter{
     position: absolute;
-    cursor: move;
+    
     top: 510px;
     left: 1115px;
     width: 125px;
@@ -150,7 +163,7 @@ body {
 
 #headphones{
     position: absolute;
-    cursor: move;
+    
     top: 250px;
     left: 1015px;
     width: 200px;
@@ -158,7 +171,7 @@ body {
 
 #webkinz-1{
     position: absolute;
-    cursor: move;
+    
     top: 475px;
     left: 300px;
     width: 100px;
@@ -167,7 +180,7 @@ body {
 
 #webkinz-2{
     position: absolute;
-    cursor: move;
+    
     top: 480px;
     left: 930px;
     width: 100px;
@@ -176,7 +189,7 @@ body {
 
 #webkinz-3{
     position: absolute;
-    cursor: move;
+    
     top: 540px;
     left: 1015px;
     width: 100px;
@@ -185,7 +198,7 @@ body {
 
 #webkinz-4{
     position: absolute;
-    cursor: move;
+    
     top: 275px;
     left: 1115px;
     width: 100px;
@@ -194,7 +207,7 @@ body {
 
 #discman{
     position: absolute;
-    cursor: move;
+    
     top: 610px;
     left: 275px;
     width: 300px;
@@ -203,7 +216,7 @@ body {
 
 .zune-1 {
     position: absolute;
-    cursor: move;
+    
     top: 675px;
     left: 875px;
     width: 125px;
@@ -212,7 +225,7 @@ body {
 
 .zune-2 {
     position: absolute;
-    cursor: move;
+    
     top: 675px;
     left: 875px;
     width: 125px;
@@ -268,6 +281,46 @@ body {
     transform: rotate(-20deg);
 }
 
+.shake {
+    animation: shake 1s linear;
+}
+
+@keyframes shake{
+    0% {
+        transform: rotate(-20deg);
+    }
+    5% {
+        transform: rotate(-15deg);
+    }
+    15% {
+        transform: rotate(-25deg);
+    }
+    25% {
+        transform: rotate(-15deg);
+    }
+    35% {
+        transform: rotate(-25deg);
+    }
+    45% {
+        transform: rotate(-15deg);
+    }
+    55% {
+        transform: rotate(-25deg);
+    }
+    65% {
+        transform: rotate(-15deg);
+    }
+    75% {
+        transform: rotate(-25deg);
+    }
+    85% {
+        transform: rotate(-15deg);
+    }
+    95% {
+        transform: rotate(-20deg);
+    }
+}
+
 .microphone {
     position: absolute;
     top: 225px;
@@ -282,6 +335,25 @@ body {
     left: 500px;
     width: 400px;
     transform: rotate(30deg);
+}
+
+.turn {
+    animation: twist 2s linear;
+}
+
+@keyframes twist{
+    0% {
+        transform: rotate(30deg);
+    }
+    25% {
+        transform: rotate(75deg);
+    }
+    70% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
 }
 
 .city-folk {
@@ -347,62 +419,6 @@ body {
     transform: rotate(-165deg);
 }
 
-.alligator {
-    position: absolute;
-    top: 150px;
-    left: 525px;
-    width: 400px;
-    transform: rotate(45deg);
-}
-
-.pug {
-    position: absolute;
-    top: 460px;
-    left: 300px;
-    width: 250px;
-    transform: rotate(90deg);
-}
-
-.hamster {
-    position: absolute;
-    top: 275px;
-    left: 275px;
-    width: 75px;
-    transform: rotate(30deg);
-}
-
-.cheese {
-    position: absolute;
-    top: 350px;
-    left: 285px;
-    width: 75px;
-    transform: rotate(30deg);
-}
-
-.pig {
-    position: absolute;
-    top: 325px;
-    left: 350px;
-    width: 80px;
-    transform: rotate(175deg);
-}
-
-.captain {
-    position: absolute;
-    top: 275px;
-    left: 475px;
-    width: 50px;
-    transform: rotate(-20deg);
-}
-
-.first-mate {
-    position: absolute;
-    top: 300px;
-    left: 525px;
-    width: 50px;
-    transform: rotate(10deg);
-}
-
 .groove {
     position: absolute;
     top: 200px;
@@ -427,6 +443,110 @@ body {
     transform: rotate(-170deg);
 }
 
+
+
+
+
+
+
+
+
+
+/* .logs {
+    position: absolute;
+    top: 200px;
+    left: 225px;
+    width: 700px;
+} */
+
+.logs {
+    position: absolute;
+    top: 165px;
+    left: 250px;
+    width: 700px;
+    transform: rotate(190deg);
+}
+
+.alligator {
+    position: absolute;
+    top: 210px;
+    left: 475px;
+    width: 400px;
+    transform: rotate(-30deg);
+}
+
+.redcoat {
+    position: absolute;
+    top: 525px;
+    left: 265px;
+    width: 65px;
+    transform: rotate(-140deg);
+}
+
+.pug {
+    position: absolute;
+    top: 225px;
+    left: 250px;
+    width: 250px;
+    transform: rotate(155deg);
+}
+
+.hamster {
+    position: absolute;
+    top: 240px;
+    left: 675px;
+    width: 75px;
+    transform: rotate(30deg);
+}
+
+.cheese {
+    position: absolute;
+    top: 245px;
+    left: 775px;
+    width: 75px;
+    transform: rotate(30deg);
+}
+
+.pig {
+    position: absolute;
+    top: 615px;
+    left: 260px;
+    width: 80px;
+    transform: rotate(150deg);
+}
+
+.captain {
+    position: absolute;
+    top: 300px;
+    left: 740px;
+    width: 50px;
+    transform: rotate(-20deg);
+}
+
+.first-mate {
+    position: absolute;
+    top: 325px;
+    left: 815px;
+    width: 50px;
+    transform: rotate(10deg);
+}
+
+.walkie-talkie {
+    position: absolute;
+    top: 300px;
+    left: 290px;
+    width: 250px;
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
 .spider {
     position: absolute;
     top: 300px;
@@ -449,4 +569,18 @@ body {
     left: 675px;
     width: 500px;
     transform: rotate(20deg);
+}
+
+.books {
+    position: absolute;
+    top: 185px;
+    left: 450px;
+    width: 850px;
+}
+
+.knex {
+    position: absolute;
+    top: 225px;
+    left: 200px;
+    width: 425px;
 }
