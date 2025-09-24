@@ -7,10 +7,15 @@ img {
 }
 
 body {
-    background-image: url(tan-paper.JPG);
+    background-image: url(charcoal-paper.JPG);
     background-size: cover;
     font-family: 'Courier New', Courier, monospace;
     padding: 50px;
+    color: whitesmoke;
+    opacity: 85%;
+    text-align: center;
+    /* text-shadow: 2px 2px black; */
+    
 }
 
 h1 {
@@ -24,8 +29,23 @@ h2 {
 p {
     font-weight: bold;
     color: black;
+    text-align: left;
+    padding-left: 15vw;
 }
 
 a {
-    color: mediumslateblue;
+    color: cyan;
+}
+
+ul {
+    text-align: left;
+}
+
+.space {
+    height: 10vh;
+}
+
+.pages-list {
+    width: 40vw;
+    margin: auto;
 }
