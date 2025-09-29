@@ -29,7 +29,7 @@ body {
 .header {
     text-align: center;
     font-style: oblique;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .header a {
@@ -40,13 +40,13 @@ body {
 .boxes {
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
-    /* align-content: center; */
-    width: 800px;
+    margin: auto;
+    /* align-self: center; */
+    width: 600px;
 }
 
 .title {
-    width: 800px;
+    width: 600px;
     align-self: center;
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .images {
-    width: 800px;
+    width: 700px;
     display: flex;
     flex-direction: row;
     gap: 10px;
