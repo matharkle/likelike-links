@@ -11,7 +11,7 @@ a {
 }
 
 body {
-    background-image: url(../charcoal-paper.JPG);
+    background-image: url(../assets/charcoal-paper.JPG);
     background-size: cover;
     font-family: 'Courier New', Courier, monospace;
     padding: 30px 50px 50px 0px;

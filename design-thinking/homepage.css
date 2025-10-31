@@ -7,7 +7,7 @@ img {
 }
 
 body {
-    background-image: url(charcoal-paper.JPG);
+    background-image: url(assets/charcoal-paper.JPG);
     background-size: cover;
     font-family: 'Courier New', Courier, monospace;
     padding: 50px;
@@ -50,8 +50,8 @@ a {
     display: flex;
     flex-direction: column;
     /* position: absolute; */
-    height: 100px;
-    width: 400px;
+    height: fit-content;
+    width: fit-content;
     align-items: center;
     align-content: center;
     align-self: center;
@@ -60,7 +60,7 @@ a {
 }
 
 .tape-31 {
-    background-image: url(painters_31.png);
+    background-image: url(assets/painters_31.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -75,7 +75,7 @@ a {
 }
 
 .tape-34 {
-    background-image: url(painters_34.png);
+    background-image: url(assets/painters_34.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -90,7 +90,7 @@ a {
     width: 60vw;
     height: 36vw;
     margin: auto;
-    background-image: url(painters_36.png);
+    background-image: url(assets/painters_36.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -101,7 +101,7 @@ a {
 .pages-list {
     text-align: center;
     /* padding: 20px 0px 0px 100px; */
-    background-image: url(painters_31.png);
+    background-image: url(assets/painters_31.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -119,5 +119,37 @@ a {
     /* transform: rotate(-70deg); */
     height: 100px;
     width: 400px;
+    align-content: center;
+}
+
+.sprint-2 {
+    text-align: center;
+    background-image: url(assets/painters_36.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0, 0.5);
+    height: 100px;
+    width: 400px;
+    align-content: center;
+}
+
+
+.sprint-3 {
+    text-align: center;
+    background-image: url(assets/painters_34.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: black; */
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0, 0.5);
+    height: 125px;
+    width: 275px;
     align-content: center;
 }
