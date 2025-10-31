@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: cyan;
+}
+
+body {
+    background-image: url(../assets/charcoal-paper.JPG);
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 30px 50px 50px 0px;
+    color: whitesmoke;
+    opacity: 85%;
+    /* display: flex;
+    flex-direction: column;
+    gap: 20px; */
+}
+
+/* p {
+    width: 600px;
+} */
+
+.header {
+    text-align: center;
+    font-style: oblique;
+    padding-bottom: 50px;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* align-self: center; */
+    width: 600px;
+}
+
+.title {
+    width: 600px;
+    align-self: center;
+}
+
+
+.paragraphs {
+    width: 600px;
+    align-self: center;
+}
+
+.images {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 30px 0px 30px 0px;
+    align-self: center;
+}
+
+.images img {
+    max-width: 50%;
+}
+
+.space {
+    height: 30px;
+}
+
+.footer {
+    padding-top: 100px;
+    font-style: oblique;
+    text-align: center;
+}
+
+.zoom {
+    width: 70%;
+    align-self: center;
+}
